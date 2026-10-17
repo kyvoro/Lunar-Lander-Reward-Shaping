@@ -82,7 +82,7 @@ GitHub Actions runs these tests on pushes and pull requests. The tests cover sta
 - `LunarLander-v3` is a 2D educational simulation, not an aerospace-validated flight model.
 - The exact dependency pins were verified on macOS ARM64 with Python 3.12; other platforms still need compatibility checks.
 
-See [the experiment log](docs/experiments.md) for methods and per-run results.
+See [the experiment log](docs/experiments.md) for methods and per-run results, and [project contributions](docs/contributions.md) for how the work was carried out.
 
 ## CV-ready project entry
 
@@ -104,7 +104,7 @@ See [the experiment log](docs/experiments.md) for methods and per-run results.
 ├── results/                    # Episode-level evaluation and training logs
 ├── tests/                      # Unit tests for reward and landing logic
 ├── .github/workflows/          # Automated test workflow
-└── docs/                       # Experiment methods and results
+└── docs/                       # Experiment and project documentation
 ```
 
 Technical references: [Gymnasium Lunar Lander](https://gymnasium.farama.org/environments/box2d/lunar_lander/), [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/stable/), [Gymnasium video recording](https://gymnasium.farama.org/api/wrappers/misc_wrappers/#gymnasium.wrappers.RecordVideo).

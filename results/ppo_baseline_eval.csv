@@ -1,0 +1,11 @@
+episode,seed,original_episode_return,score_at_least_200,steps,terminated,truncated
+1,100,214.0269613721193,True,364,True,False
+2,101,247.41230100792413,True,338,True,False
+3,102,207.20366936506377,True,394,True,False
+4,103,119.78454186842335,False,1000,False,True
+5,104,232.92368890611232,True,374,True,False
+6,105,183.54653049090268,False,397,True,False
+7,106,192.08690478825145,False,409,True,False
+8,107,259.4935214778554,True,337,True,False
+9,108,245.9537669434723,True,330,True,False
+10,109,239.454724792749,True,355,True,False

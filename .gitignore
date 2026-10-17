@@ -1,0 +1,30 @@
+# Python environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Generated training artifacts
+runs/
+models/*
+!models/ppo_baseline.zip
+!models/ppo_baseline_100k_seed_0.zip
+!models/ppo_hover_bonus_seed_0_100000.zip
+!models/ppo_landing_zone_seed_0_1000000.zip
+!models/ppo_time_penalty_seed_0_100000.zip
+videos/*
+!videos/lunar-lander-demo-english-0.5x.mp4
+!videos/hover_bonus_100k/
+videos/hover_bonus_100k/*
+!videos/hover_bonus_100k/ppo_hover_bonus_seed_0_100000-seed-100-episode-0.mp4

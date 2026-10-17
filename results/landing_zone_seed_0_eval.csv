@@ -1,0 +1,11 @@
+episode,seed,original_episode_return,score_at_least_200,steps,terminated,truncated,crash,stable_landing,landing_zone_success,lander_x,pad_left,pad_right
+1,100,247.934020670162,True,201,True,False,False,True,True,10.741545677185059,8.0,12.0
+2,101,278.93780413740285,True,181,True,False,False,True,True,10.593201637268066,8.0,12.0
+3,102,274.830800126561,True,199,True,False,False,True,True,10.310506820678711,8.0,12.0
+4,103,260.7265124951722,True,245,True,False,False,False,False,11.090714454650879,8.0,12.0
+5,104,285.9445153253247,True,211,True,False,False,True,True,10.14494514465332,8.0,12.0
+6,105,288.9726076396166,True,212,True,False,False,True,True,10.499039649963379,8.0,12.0
+7,106,316.6476979756119,True,211,True,False,False,True,True,10.128752708435059,8.0,12.0
+8,107,314.88048714988247,True,213,True,False,False,True,True,10.869222640991211,8.0,12.0
+9,108,262.05661314068425,True,221,True,False,False,True,False,11.374649047851562,8.0,12.0
+10,109,272.2611958997936,True,189,True,False,False,True,True,10.342707633972168,8.0,12.0

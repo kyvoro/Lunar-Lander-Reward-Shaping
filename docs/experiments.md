@@ -57,6 +57,8 @@ The landing-zone model and original baseline were evaluated on the same addition
 | Crashes | 17/100 | 5/100 |
 | Time-limit truncations | 5/100 | 2/100 |
 
+Across the paired seeds, both policies landed in the zone 21 times, neither did 20 times, the landing-zone policy succeeded while the baseline failed 58 times, and the reverse happened once. Wilson 95% intervals for the per-policy zone-success proportions are 15.0–31.1% for the baseline and 70.0–85.8% for landing-zone shaping. These intervals describe evaluation-seed variation for the two fixed policies; they do not include training-seed variability.
+
 This matched sample shows a substantial improvement in pad placement, but 21/100 landing-zone episodes still failed the strict zone-success criterion. The policy is not guaranteed to land in the zone on every seed. Results are in `results/ppo_baseline_eval_200_299.csv` and `results/landing_zone_seed_0_eval_200_299.csv`.
 
 ## Variants

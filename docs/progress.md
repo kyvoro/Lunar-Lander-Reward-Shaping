@@ -173,3 +173,11 @@ Verification used SDL's dummy display driver: the default `watch_agent.py` comma
 ## 2026-10-17 — Repository cleanup
 
 To reduce the GitHub project, the custom renderer, generated image assets, and static preview were removed. `watch_agent.py` now uses Gymnasium's built-in live rendering; training, rewards, models, evaluation metrics, and results are unchanged. The standalone beginner exercises and older local recordings were also removed as redundant. The half-speed demo and hover-bonus pilot clip remain; the README identifies the half-speed video as a capture of the earlier renderer.
+
+## 2026-10-17 — Portfolio presentation and automated checks
+
+Codex reorganized the README around the measured 100-seed result, added a bilingual CV-ready project entry, clarified that the demo is a playback rather than a training recording, and made the single-training-seed limitation prominent. The experiment log now includes paired outcome counts and Wilson intervals for the fixed policies.
+
+Codex added standard-library `unittest` coverage for stable landing, full-leg pad boundaries, reward components, landing and off-pad terminal feedback, and wrapper reset state. A GitHub Actions workflow runs these tests on pushes and pull requests using Python 3.12. All eight tests passed both in the project environment and in a clean environment containing only `requirements-test.txt`.
+
+The two saved 100-seed evaluations were rerun from the checked-in models. Each produced 100 records, and both parsed result files exactly matched their committed CSVs. The aggregate readback reproduced 22/100 versus 79/100 in-zone landings and 17 versus 5 crashes. `compileall`, `uv pip check`, and `git diff --check` also passed.

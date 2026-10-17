@@ -82,13 +82,13 @@ GitHub Actions runs these tests on pushes and pull requests. The tests cover sta
 - `LunarLander-v3` is a 2D educational simulation, not an aerospace-validated flight model.
 - The exact dependency pins were verified on macOS ARM64 with Python 3.12; other platforms still need compatibility checks.
 
-See [the experiment log](docs/experiments.md) for methods and per-run results, and [the progress log](docs/progress.md) for milestones, authorship, and verification notes.
+See [the experiment log](docs/experiments.md) for methods and per-run results.
 
 ## CV-ready project entry
 
-**English:** Designed and analysed an AI-assisted PPO reward-shaping study with Gymnasium and Stable-Baselines3; on 100 matched evaluation seeds, full-pad landings rose from 22% to 79% and crashes fell from 17 to 5 (one training seed per policy).
+**English:** PPO reward-shaping experiment with Gymnasium and Stable-Baselines3: on 100 matched evaluation seeds, full-pad landings were 79/100 with landing-zone shaping versus 22/100 with the baseline, while crashes fell from 17 to 5 (one training seed per policy).
 
-**Deutsch:** Konzipierte und analysierte eine KI-unterstützte PPO-Reward-Shaping-Studie mit Gymnasium und Stable-Baselines3; auf 100 gepaarten Test-Seeds stieg die Quote vollständiger Landezone-Landungen von 22 % auf 79 %, während die Crashs von 17 auf 5 sanken (je ein Trainings-Seed pro Variante).
+**Deutsch:** PPO-Reward-Shaping-Experiment mit Gymnasium und Stable-Baselines3: Auf 100 gepaarten Test-Seeds landete die Policy mit Landezonen-Shaping 79-mal vollständig auf dem Pad, die Baseline 22-mal; die Crashs sanken von 17 auf 5 (je ein Trainings-Seed pro Policy).
 
 ## Project structure
 
@@ -104,13 +104,7 @@ See [the experiment log](docs/experiments.md) for methods and per-run results, a
 ├── results/                    # Episode-level evaluation and training logs
 ├── tests/                      # Unit tests for reward and landing logic
 ├── .github/workflows/          # Automated test workflow
-└── docs/                       # Experiment and contribution logs
+└── docs/                       # Experiment methods and results
 ```
-
-## Sources and authorship
-
-The project was inspired by Hari (@harixganesh), *Training an AI to land a rocket with reward shaping: how it works and how to build it*, supplied as pasted text; the original publication URL was not provided. This repository is an independent implementation and experiment.
-
-The learner defined the task and reward preferences and completed guided Python and reinforcement-learning exercises. Codex wrote or modified several scripts at the learner's explicit request; contributions and verification are recorded in the progress log.
 
 Technical references: [Gymnasium Lunar Lander](https://gymnasium.farama.org/environments/box2d/lunar_lander/), [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/stable/), [Gymnasium video recording](https://gymnasium.farama.org/api/wrappers/misc_wrappers/#gymnasium.wrappers.RecordVideo).
